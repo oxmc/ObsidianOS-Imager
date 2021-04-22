@@ -20,7 +20,7 @@ ApplicationWindow {
     minimumHeight: imageWriter.isEmbeddedMode() ? -1 : 420
     //maximumHeight: imageWriter.isEmbeddedMode() ? -1 : 420
 
-    title: qsTr("oxmc's Raspberry Pi Imager v%1").arg(imageWriter.constantVersion())
+    title: qsTr("ObsidianOS Imager v%1").arg(imageWriter.constantVersion())
 
     FontLoader {id: roboto;      source: "fonts/Roboto-Regular.ttf"}
     FontLoader {id: robotoLight; source: "fonts/Roboto-Light.ttf"}
@@ -44,13 +44,13 @@ ApplicationWindow {
     }
 
     Shortcut {
-        sequences: ["Shift+Ctrl+O", "Shift+Meta+O"]
+        sequences: ["Shift+Ctrl+A", "Shift+Meta+A"]
         context: Qt.ApplicationShortcut
         onActivated: {
             optionspopup.openPopup()
         }
     }
-        
+
     ColumnLayout {
         id: bg
         spacing: 0
@@ -401,10 +401,7 @@ ApplicationWindow {
     ListModel {
         id: osmodel
 
-        Component.onCompleted: {
-            if (imageWriter.isOnline()) {
-                fetchOSlist();
-                ListElement {
+        ListElement {
             url: "internal://format"
             icon: "icons/erase.png"
             extract_size: 0
@@ -418,52 +415,20 @@ ApplicationWindow {
             description: qsTr("Format card as FAT32")
             tooltip: ""
         }
-        
+
         ListElement {
             url: ""
             icon: "icons/use_custom.png"
-            name: qsTr("Use custom .img")
+            name: qsTr("Use custom")
             description: qsTr("Select a custom .img from your computer")
         }
-        
-        /*ListElement {
-            url: ""
-            icon: "icons/use_custom.png"
-            name: qsTr("Use custom .img from URL")
-            description: qsTr("Download and use a custom .img from a URL")
-            internalIndex: 1
-        }*/
-        
-        Button {
-              anchors.fill: parent
-              text: ""
-              iconSource: "qrc:/youricon.png"
-              onClicked: {
-                            geturlpopup.open()
-                            osswipeview.currentItem.forceActiveFocus()
-                        }
-                        Material.background: "#ffffff"
-                        Material.foreground: "#c51a4a"
-                        Accessible.ignored: geturlpopup.visible || geturlpopup.visible
-                        Accessible.description: qsTr("Select this button to download a .img from a url and flash it to a card/usb")
-        }
+
+        Component.onCompleted: {
+            if (imageWriter.isOnline()) {
+                fetchOSlist();
             }
         }
     }
-    
-    /*
-    MouseArea {
-                    anchors.fill: parent
-                    onClicked: list.currentIndex = index
-                }
-            Accessible.onPressAction: {
-                if (currentIndex == 1)
-                    selectOSitem(model.get(currentIndex))
-                    console.log(model.get(list.currentIndex).name + ' selected')
-                    optionspopup.openPopup()
-            }
-    
-      */
 
     Component {
         id: osdelegate
@@ -778,7 +743,7 @@ ApplicationWindow {
         yesButton: true
         noButton: true
         title: qsTr("Are you sure you want to quit?")
-        text: qsTr("The Imager is still busy.<br>Are you sure you want to quit?")
+        text: qsTr("Raspberry Pi Imager is still busy.<br>Are you sure you want to quit?")
         onYes: {
             Qt.quit()
         }
