@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Imager-modified
+Comment=Raspberry Pi Imager
+Icon=rpi-imager-modified
+Exec=rpi-imager-modified
+Categories=Utility
+StartupNotify=false
