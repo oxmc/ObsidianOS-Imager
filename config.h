@@ -8,10 +8,10 @@
 
 
 /* Repository URL */
-#define OSLIST_URL                        "https://oxmc.github.io/files/rpi/apps/imager-rpi/ObsidianOS_image_list_v2.json"
+#define OSLIST_URL                        "https://oxmc.github.io/ObsidianOS/apt/imager/ObsidianOS_image_list_v2.json"
 
 /* Time synchronization URL (only used on eglfs QPA platform, URL must be HTTP) */
-#define TIME_URL                          "http://oxmc.github.io/files/rpi/apps/imager-rpi/ObsidianOS_image_list_v2.json?time_synchronization"
+#define TIME_URL                          "http://oxmc.github.io/ObsidianOS/apt/imager/ObsidianOS_image_list_v2.json?time_synchronization"
 
 /* Phone home the name of images downloaded for image popularity ranking */
 #define TELEMETRY_URL                     "https://rpi-imager-stats.raspberrypi.org/downloads"
