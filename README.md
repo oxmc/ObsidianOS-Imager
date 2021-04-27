@@ -1,25 +1,26 @@
-# rpi-imager
+# ObsidianOS-Imager
 
-Raspberry Pi Imaging Utility
+ObsidianOS Imaging Utility
 
-- Download the latest version for Windows, macOS and Ubuntu from the [Raspberry Pi downloads page](https://www.raspberrypi.org/downloads/).
-- To install on Raspberry Pi OS, use `sudo apt update && sudo apt install rpi-imager`.
+# Download
 
-## License
+- Download the latest version for Raspberry Pi OS from the [ObsidianOS downloads page](https://oxmc.github.io/ObsidianOS/downloads/).
 
-The main code of the Imaging Utility is made available under the terms of the Apache license.
-See license.txt and files in "dependencies" folder for more information about the various open source licenses that apply to the third-party dependencies used such as Qt, libarchive, drivelist, mountutils and libcurl.
+# Download-other
 
-## How to rebuild
+Windows and MacOS are currently not supported.
+They will be supported soon.
 
-### Debian/Ubuntu Linux
+# How to compile
 
-#### Get dependencies
+## Debian/Ubuntu
+
+### Get dependencies
 
 Install the build dependencies:
 
 ```
-sudo apt install --no-install-recommends build-essential devscripts debhelper cmake git libarchive-dev libcurl4-openssl-dev \
+sudo apt install -y --no-install-recommends build-essential devscripts debhelper cmake git libarchive-dev libcurl4-openssl-dev \
     qtbase5-dev qtbase5-dev-tools qtdeclarative5-dev libqt5svg5-dev qttools5-dev qt5-default libssl-dev \
     qml-module-qtquick2 qml-module-qtquick-controls2 qml-module-qtquick-layouts qml-module-qtquick-templates2 qml-module-qtquick-window2 qml-module-qtgraphicaleffects
 ```
@@ -27,22 +28,22 @@ sudo apt install --no-install-recommends build-essential devscripts debhelper cm
 #### Get the source
 
 ```
-git clone --depth 1 https://github.com/raspberrypi/rpi-imager
+git clone --depth 1 https://github.com/oxmc/ObsidianOS-Imager
 ```
 
 #### Build the Debian package
 
 ```
-cd rpi-imager
+cd ObsidianOS-Imager
 debuild -uc -us
 ```
 
 debuild will compile everything, create a .deb package and put it in the parent directory.
-Can install it with apt:
+You can install it with apt:
 
 ```
 cd ..
-sudo apt install ./rpi-imager*.deb
+sudo apt install ./ob-imager*.deb
 ```
 
 It should create an icon in the start menu under "Utilities" or "Accessories".
@@ -62,13 +63,13 @@ sudo yum install git gcc gcc-c++ make cmake libarchive-devel libcurl-devel opens
 #### Get the source
 
 ```
-git clone --depth 1 https://github.com/raspberrypi/rpi-imager
+git clone --depth 1 https://github.com/oxmc/ObsidianOS-Imager
 ```
 
 #### Build and install the software
 
 ```
-cd rpi-imager
+cd ObsidianOS-Imager
 cmake .
 make
 sudo make install
@@ -139,12 +140,16 @@ On Windows start the application with the command-line option --debug to let it 
 
 ### Custom repository
 
+# NOTE: We are using a url to get the image list, you can change it in [config.h](https://github.com/oxmc/ObsidianOS-Imager/blob/qml/config.h)
+
 If the application is started with "--repo [your own URL]" it will use a custom image repository.
-So can simply create another 'start menu shortcut' to the application with that parameter to use the application with your own images.
+So you can simply create another 'start menu shortcut' to the application with that parameter to use the application with your own images.
 
 ### Telemetry
 
-In order to understand which images and operating systems are most popular and re-organise the application accordingly, when using the default image repository, the URL, operating system name and category (if present) of a selected image are sent to https://rpi-imager-stats.raspberrypi.org by [`downloadstatstelemetry.cpp`](https://github.com/raspberrypi/rpi-imager/blob/qml/downloadstatstelemetry.cpp).
+# NOTE: I have disabled Telementry by default, every thing below does not apply.
+
+In order to understand which images and operating systems are most popular and re-organise the application accordingly, when using the default image repository, the URL, operating system name and category (if present) of a selected image are sent to https://rpi-imager-stats.raspberrypi.org by [`downloadstatstelemetry.cpp`](https://github.com/oxmc/ObsidianOS-Imager/blob/qml/downloadstatstelemetry.cpp).
 
 This web service is hosted by [Heroku](https://www.heroku.com) and only stores an incrementing counter using a [Redis Sorted Set](https://redis.io/topics/data-types#sorted-sets) for each URL, operating system name and category per day in the `eu-west-1` region and does not associate any personal data with those counts. This allows us to query the number of downloads over time and nothing else.
 
@@ -156,7 +161,7 @@ On Windows, you can opt out of telemetry by disabling it in the Registry:
 reg add "HKCU\Software\Raspberry Pi\Imager" /v telemetry /t REG_DWORD /d 0
 ```
 
-On Linux, run `rpi-imager --disable-telemetry` or add the following to `~/.config/Raspberry Pi/Imager.conf`:
+On Linux, run `ob-imager --disable-telemetry` or add the following to `~/.config/Raspberry Pi/Imager.conf`:
 
 ```ini
 [General]
