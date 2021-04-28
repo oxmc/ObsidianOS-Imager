@@ -2,11 +2,11 @@
 
 ObsidianOS Imaging Utility
 
-# Download
+## Download
 
 - Download the latest version for Raspberry Pi OS from the [ObsidianOS downloads page](https://oxmc.github.io/ObsidianOS/downloads/).
 
-# Download-other
+### Download-other
 
 Windows and MacOS are currently not supported.
 They will be supported soon.
@@ -140,7 +140,7 @@ On Windows start the application with the command-line option --debug to let it 
 
 ### Custom repository
 
-# NOTE: We are using a url to get the image list, you can change it in [config.h](https://github.com/oxmc/ObsidianOS-Imager/blob/qml/config.h)
+### NOTE: We are using a url to get the image list, you can change it in ```[config.h](https://github.com/oxmc/ObsidianOS-Imager/blob/qml/config.h)```
 
 If the application is started with "--repo [your own URL]" it will use a custom image repository.
 So you can simply create another 'start menu shortcut' to the application with that parameter to use the application with your own images.
