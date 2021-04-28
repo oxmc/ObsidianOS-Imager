@@ -147,7 +147,7 @@ So you can simply create another 'start menu shortcut' to the application with t
 
 ### Telemetry
 
-# NOTE: I have disabled Telementry by default, every thing below does not apply.
+### NOTE: I have disabled Telementry by default, every thing below does not apply.
 
 In order to understand which images and operating systems are most popular and re-organise the application accordingly, when using the default image repository, the URL, operating system name and category (if present) of a selected image are sent to https://rpi-imager-stats.raspberrypi.org by [`downloadstatstelemetry.cpp`](https://github.com/oxmc/ObsidianOS-Imager/blob/qml/downloadstatstelemetry.cpp).
 
