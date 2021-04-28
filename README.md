@@ -140,7 +140,7 @@ On Windows start the application with the command-line option --debug to let it 
 
 ### Custom repository
 
-### NOTE: We are using a url to get the image list, you can change it in [`config.h`](https://github.com/oxmc/ObsidianOS-Imager/blob/qml/config.h)
+### NOTE: We are using a url to get the image list, you can change it in [`config.h`](https://github.com/oxmc/ObsidianOS-Imager/blob/c90da69aff9fb693c29b51b1a03d5224d09d72ce/config.h#L11)
 
 If the application is started with "--repo [your own URL]" it will use a custom image repository.
 So you can simply create another 'start menu shortcut' to the application with that parameter to use the application with your own images.
