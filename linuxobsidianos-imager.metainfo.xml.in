@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <component type="desktop-application">
-  <id>org.oxmc.twisteros-imager</id>
+  <id>org.oxmc.obsidianos-imager</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>Apache-2.0</project_license>
-  <name>TwisterOS Imager</name>
-  <summary>Raspberry Pi imaging utility</summary>
+  <name>ObsidianOS Imager</name>
+  <summary>ObsidianOS imaging utility</summary>
   <description>
     <p>
-      TwisterOS Imager downloads a .JSON file from the TwisterOS
+      ObsidianOS Imager downloads a .JSON file from the ObsidianOS
       website with a list of all current download options, ensuring you are
       always installing the most up-to-date version.
     </p>
     <p>
       Once you’ve selected an operating system from the available options,
-      the utility reads the relevant file directly from the TwisterOS
+      the utility reads the relevant file directly from the ObsidianOS
       website and writes it straight to the SD card. This speeds up the
       process quite considerably compared to the standard process of reading
       it from the website, writing it to a file on your hard drive, and then,
@@ -21,13 +21,13 @@
       to the SD card.
     </p>
     <p>
-      During this process, TwisterOS Imager also caches the downloaded
+      During this process, ObsidianOS Imager also caches the downloaded
       operating system image – that is to say, it saves a local copy on your
       computer, so you can program additional SD cards without having to
       download the file again.
     </p>
   </description>
-  <launchable type="desktop-id">twisteros-imager.desktop</launchable>
+  <launchable type="desktop-id">obsidianos-imager.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>http://downloads.raspberrypi.org/imager/IMAGING-UTILITY-MAIN.png</image>
@@ -50,7 +50,7 @@
       <caption>Write done</caption>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://github.com/oxmc/TwisterOS-Imager</url>
+  <url type="homepage">https://github.com/oxmc/ObsidianOS-Imager</url>
   <provides>
     <binary>twister-imager</binary>
   </provides>
