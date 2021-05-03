@@ -6,7 +6,7 @@ if (APPLE)
 set(CMAKE_OSX_DEPLOYMENT_TARGET "10.13" CACHE STRING "" FORCE)
 endif()
 
-project(twisteros-imager LANGUAGES CXX C)
+project(obsidianos-imager LANGUAGES CXX C)
 set(IMAGER_VERSION_MAJOR 1)
 set(IMAGER_VERSION_MINOR 0)
 set(IMAGER_VERSION_STR "${IMAGER_VERSION_MAJOR}.${IMAGER_VERSION_MINOR}.0")
@@ -237,14 +237,14 @@ else()
     endif()
 
     configure_file(
-        "${CMAKE_CURRENT_SOURCE_DIR}/linux/twisteros-imager.metainfo.xml.in"
-        "${CMAKE_CURRENT_BINARY_DIR}/twisteros-imager.metainfo.xml"
+        "${CMAKE_CURRENT_SOURCE_DIR}/linux/obsidianos-imager.metainfo.xml.in"
+        "${CMAKE_CURRENT_BINARY_DIR}/obsidianos-imager.metainfo.xml"
         @ONLY)
 
     install(TARGETS twisteros-imager DESTINATION bin)
     install(FILES icons/rpi-imager.png DESTINATION share/icons/hicolor/128x128/apps)
-    install(FILES linux/twisteros-imager.desktop DESTINATION share/applications)
-    install(FILES "${CMAKE_CURRENT_BINARY_DIR}/twisteros-imager.metainfo.xml" DESTINATION share/metainfo)
+    install(FILES linux/obsidianos-imager.desktop DESTINATION share/applications)
+    install(FILES "${CMAKE_CURRENT_BINARY_DIR}/obsidianos-imager.metainfo.xml" DESTINATION share/metainfo)
 endif()
 
 get_target_property(QT_TARGET_TYPE Qt5::Core TYPE)
