@@ -1,0 +1,12 @@
+# Hashes of file build rules.
+a62583353f8b85b49a92464d0fb4d016 CMakeFiles/twisteros-imager_autogen
+7981abfa77f11c7429c852e296a8e9ce rpi-imager_de.qm
+de5bd4d66ad2755b9709e85baf46a88a rpi-imager_en.qm
+9989937a1d0a6d97a9d51eecfffc6695 rpi-imager_fr.qm
+e8120a6d9c0572e8ed5cc96c69e0b0f0 rpi-imager_it.qm
+74257d96c448718bfbd284cd3ae456b2 rpi-imager_nl.qm
+a5d7bee123467792ab8d4a2be7866c8f rpi-imager_sk.qm
+8a085454485e6a4852fabb96f4a5dace rpi-imager_tr.qm
+9b6d55179d5a8b88c745ab2dfaab508b rpi-imager_zh_cn.qm
+a1caa0f607fb4a2cf2257c7326e16d8c twisteros-imager_autogen/EWIEGA46WW/qrc_qml.cpp
+e1491b3f6612df99bfb57058dc326edb twisteros-imager_autogen/GJXGGJFIRE/qrc_translations.cpp

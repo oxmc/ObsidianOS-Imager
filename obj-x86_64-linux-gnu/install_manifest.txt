@@ -1,0 +1,4 @@
+/usr/bin/twisteros-imager
+/usr/share/icons/hicolor/128x128/apps/rpi-imager.png
+/usr/share/applications/twisteros-imager.desktop
+/usr/share/metainfo/twisteros-imager.metainfo.xml

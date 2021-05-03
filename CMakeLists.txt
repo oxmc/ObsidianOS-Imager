@@ -6,10 +6,10 @@ if (APPLE)
 set(CMAKE_OSX_DEPLOYMENT_TARGET "10.13" CACHE STRING "" FORCE)
 endif()
 
-project(rpi-imager LANGUAGES CXX C)
+project(twisteros-imager LANGUAGES CXX C)
 set(IMAGER_VERSION_MAJOR 1)
-set(IMAGER_VERSION_MINOR 6)
-set(IMAGER_VERSION_STR "${IMAGER_VERSION_MAJOR}.${IMAGER_VERSION_MINOR}.3")
+set(IMAGER_VERSION_MINOR 0)
+set(IMAGER_VERSION_STR "${IMAGER_VERSION_MAJOR}.${IMAGER_VERSION_MINOR}.0")
 set(IMAGER_VERSION_CSV "${IMAGER_VERSION_MAJOR},${IMAGER_VERSION_MINOR},2,0")
 add_definitions(-DIMAGER_VERSION_STR="${IMAGER_VERSION_STR}")
 add_definitions(-DIMAGER_VERSION_CSV=${IMAGER_VERSION_CSV})
@@ -237,14 +237,14 @@ else()
     endif()
 
     configure_file(
-        "${CMAKE_CURRENT_SOURCE_DIR}/linux/rpi-imager.metainfo.xml.in"
-        "${CMAKE_CURRENT_BINARY_DIR}/rpi-imager.metainfo.xml"
+        "${CMAKE_CURRENT_SOURCE_DIR}/linux/twisteros-imager.metainfo.xml.in"
+        "${CMAKE_CURRENT_BINARY_DIR}/twisteros-imager.metainfo.xml"
         @ONLY)
 
-    install(TARGETS rpi-imager DESTINATION bin)
+    install(TARGETS twisteros-imager DESTINATION bin)
     install(FILES icons/rpi-imager.png DESTINATION share/icons/hicolor/128x128/apps)
-    install(FILES linux/rpi-imager.desktop DESTINATION share/applications)
-    install(FILES "${CMAKE_CURRENT_BINARY_DIR}/rpi-imager.metainfo.xml" DESTINATION share/metainfo)
+    install(FILES linux/twisteros-imager.desktop DESTINATION share/applications)
+    install(FILES "${CMAKE_CURRENT_BINARY_DIR}/twisteros-imager.metainfo.xml" DESTINATION share/metainfo)
 endif()
 
 get_target_property(QT_TARGET_TYPE Qt5::Core TYPE)

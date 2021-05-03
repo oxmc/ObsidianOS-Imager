@@ -1,0 +1,12 @@
+Package: twisteros-imager
+Version: 1.0
+Architecture: amd64
+Maintainer: Seth Olivarez <olivarezseth23@gmail.com>
+Installed-Size: 1075
+Depends: libarchive13 (>= 3.0.4), libc6 (>= 2.14), libcurl4 (>= 7.16.2), libgcc1 (>= 1:3.0), libqt5core5a (>= 5.11.0~rc1), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.2.0), libqt5network5 (>= 5.0.2), libqt5qml5 (>= 5.1.0), libqt5quick5 (>= 5.0.2), libqt5svg5 (>= 5.6.0~beta), libqt5widgets5 (>= 5.0.2), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2), qml-module-qtquick2, qml-module-qtquick-controls2, qml-module-qtquick-layouts, qml-module-qtquick-templates2, qml-module-qtquick-window2, qml-module-qtgraphicaleffects, dosfstools, fdisk
+Recommends: udisks2
+Section: admin
+Priority: optional
+Homepage: https://www.raspberrypi.org/
+Description: TwisterOS-Imager
+ A fork of the raspberry pi imager made for TwisterOS by oxmc.

@@ -226,7 +226,7 @@ void ImageWriter::startWrite()
     connect(_thread, SIGNAL(finalizing()), SLOT(onFinalizing()));
     connect(_thread, SIGNAL(preparationStatusUpdate(QString)), SLOT(onPreparationStatusUpdate(QString)));
     _thread->setVerifyEnabled(_verifyEnabled);
-    _thread->setUserAgent(QString("Mozilla/5.0 rpi-imager/%1").arg(constantVersion()).toUtf8());
+    _thread->setUserAgent(QString("Mozilla/5.0 twisteros-imager/%1").arg(constantVersion()).toUtf8());
     _thread->setImageCustomization(_config, _cmdline, _firstrun);
 
     if (!_expectedHash.isEmpty() && _cachedFileHash != _expectedHash && _cachingEnabled)
@@ -340,7 +340,7 @@ QUrl ImageWriter::constantOsListUrl() const
 /* Function to return version */
 QString ImageWriter::constantVersion() const
 {
-    return IMAGER_VERSION_STR;
+    return IMAGER_VER;
 }
 
 /* Returns true if version argument is newer than current program */

@@ -1,0 +1,8 @@
+/home/olivarezseth23/TwisterOS-Imager/obj-x86_64-linux-gnu/CMakeFiles/install/strip.dir
+/home/olivarezseth23/TwisterOS-Imager/obj-x86_64-linux-gnu/CMakeFiles/edit_cache.dir
+/home/olivarezseth23/TwisterOS-Imager/obj-x86_64-linux-gnu/CMakeFiles/twisteros-imager.dir
+/home/olivarezseth23/TwisterOS-Imager/obj-x86_64-linux-gnu/CMakeFiles/rebuild_cache.dir
+/home/olivarezseth23/TwisterOS-Imager/obj-x86_64-linux-gnu/CMakeFiles/list_install_components.dir
+/home/olivarezseth23/TwisterOS-Imager/obj-x86_64-linux-gnu/CMakeFiles/install/local.dir
+/home/olivarezseth23/TwisterOS-Imager/obj-x86_64-linux-gnu/CMakeFiles/install.dir
+/home/olivarezseth23/TwisterOS-Imager/obj-x86_64-linux-gnu/CMakeFiles/twisteros-imager_autogen.dir

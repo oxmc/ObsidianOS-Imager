@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "twisteros-imager_autogen"
+  "CMakeFiles/twisteros-imager_autogen.dir/AutogenOldSettings.txt"
+  "rpi-imager_en.qm"
+  "rpi-imager_nl.qm"
+  "rpi-imager_zh_cn.qm"
+  "rpi-imager_tr.qm"
+  "rpi-imager_fr.qm"
+  "rpi-imager_de.qm"
+  "rpi-imager_sk.qm"
+  "rpi-imager_it.qm"
+  "twisteros-imager_autogen/EWIEGA46WW/qrc_qml.cpp"
+  "twisteros-imager_autogen/GJXGGJFIRE/qrc_translations.cpp"
+  "CMakeFiles/twisteros-imager.dir/main.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/imagewriter.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/networkaccessmanagerfactory.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/drivelistitem.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/drivelistmodel.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/drivelistmodelpollthread.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/downloadthread.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/downloadextractthread.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/driveformatthread.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/localfileextractthread.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/powersaveblocker.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/downloadstatstelemetry.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/dependencies/sha256crypt/sha256crypt.c.o"
+  "CMakeFiles/twisteros-imager.dir/acceleratedcryptographichash.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/dependencies/mountutils/src/linux/functions.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/linux/linuxdrivelist.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/linux/udisks2api.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/twisteros-imager_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/twisteros-imager_autogen/EWIEGA46WW/qrc_qml.cpp.o"
+  "CMakeFiles/twisteros-imager.dir/twisteros-imager_autogen/GJXGGJFIRE/qrc_translations.cpp.o"
+  "twisteros-imager.pdb"
+  "twisteros-imager"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C CXX)
+  include(CMakeFiles/twisteros-imager.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

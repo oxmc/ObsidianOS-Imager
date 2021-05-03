@@ -1,11 +1,5 @@
-obsidianos-imager (1.2) unstable; urgency=medium
-
-  * Update image list url and change os icons as they were to big.
-
- -- Seth Olivarez <olivarezseth23@gmail.com>  Tue, 27 Apr 2021 2:21:04 +0100
-
-obsidianos-imager (1.0) unstable; urgency=medium
+twisteros-imager (1.0) unstable; urgency=medium
 
   * Initial Release.
 
- -- Seth Olivarez <olivarezseth23@gmail.com>  Mon, 26 Apr 2021 11:54:04 +0100
+ -- Seth Olivarez <olivarezseth23@gmail.com>  Sun, 2 May 2021 9:05:09 +0100
